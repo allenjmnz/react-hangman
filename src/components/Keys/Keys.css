@@ -1,0 +1,30 @@
+.key {
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  flex-basis: 10%;
+  margin: 0.2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+  transition: all ease 0.3s;
+  pointer-events: all;
+}
+
+.key.green, .key.red {
+  border-color: rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.key.green {
+  background-color: #A1F496;
+  box-shadow: 0 0 6px #A1F496;
+}
+
+.key.red {
+  background-color: #FCABAB;
+  box-shadow: 0 0 6px #FCABAB;
+}

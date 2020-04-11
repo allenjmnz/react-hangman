@@ -1,0 +1,40 @@
+.question {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  height: 0;
+}
+
+.question.gray {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.question p {
+  text-align: center;
+  color: rgb(177, 47, 159);
+  font-weight: 900;
+  border-bottom: 2px solid rgb(177, 47, 159);
+  padding: 0 0.2rem 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.guessing-word {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.guessing-word div {
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  width: 7.5%;
+  height: 2rem;
+  border-bottom: 4px solid black;
+}
