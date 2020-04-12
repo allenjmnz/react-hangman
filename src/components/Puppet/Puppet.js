@@ -29,7 +29,7 @@ const Puppet = (props) => {
     <div className={gameAlive ? "puppet-container" : "puppet-container gray"}>
       <div className="question-number">{questionNumber !== qna.length - 1 ? questionNumber + 1 : questionNumber}<div className="divider"></div><div className="smaller-number">{qna.length - 1}</div></div>
       {transitions.map(({ item, key, props }) => (
-        <animated.div className="puppet-animated" style={props}>{item}</animated.div>
+        <animated.div className="puppet-animated" key={key} style={props}>{item}</animated.div>
       ))}
     </div>
   )

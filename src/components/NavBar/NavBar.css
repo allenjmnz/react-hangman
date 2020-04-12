@@ -51,6 +51,7 @@ nav .hamburger-menu {
 }
 
 nav .single-line {
+  display: none;
   height: 4px;
   width: 2rem;
   background-color: white;

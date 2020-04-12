@@ -6,6 +6,7 @@
   align-items: center;
   margin: 0;
   height: 0;
+  position: relative;
 }
 
 .question.gray {
