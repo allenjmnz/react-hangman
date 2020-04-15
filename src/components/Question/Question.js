@@ -6,10 +6,10 @@ import './Question.css'
 const Question = ({gameAlive, qna, questionNum, pressedLettersArray}) => {
   const currentQ = qna[questionNum];
 
-  const transitions = useTransition(currentQ, questionNum, {
-    from: { opacity: 0, transform: 'translateX(200px)' },
+  const transitions = useTransition(currentQ, currentQ => currentQ.answer, {
+    from: { opacity: 0, transform: 'translateX(100%)' },
     enter: { opacity: 1, transform: 'translateX(0px)' },
-    leave: { opacity: 0, transform: 'translateX(-200px)' }
+    leave: { opacity: 0, transform: 'translateX(-100%)' }
   })
   
   return (
@@ -28,21 +28,6 @@ const Question = ({gameAlive, qna, questionNum, pressedLettersArray}) => {
         </animated.div>
       )
     )
-  )
-
-  return (
-    <div className={gameAlive ? "question" : "question gray"}>
-      <p>{currentQ.question}</p>
-      <div className="guessing-word">
-        {currentQ.answer.split("").map((singleLetter, index) => (
-          <Letter 
-            key={`${index}${singleLetter}`}
-            singleLetter={singleLetter}
-            pressedLettersArray={pressedLettersArray}
-          />
-        ))}
-      </div>
-    </div>
   )
 }
 
