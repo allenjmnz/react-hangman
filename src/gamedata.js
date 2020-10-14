@@ -11,4 +11,4 @@ export const questionsAndAnswers = [
     question: '¡Excelente, felicidades!',
     answer: 'COMPLETADO'
   }
-]
+];
